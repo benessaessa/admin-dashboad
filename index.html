@@ -86,7 +86,7 @@
                         <button type="button" class="btnsecondary me_2" id="btnModalPoints">
                             Modify Points
                         </button>
-                        <button type="button" class="btnPrimary me_2">
+                        <button type="button" class="btnPrimary me_2" id="btnModalBulkMission">
                             Bulk Modify Missions
                         </button>
                         <button type="button" class="btnPrimary me_2" id="btnModalBulkPoints">
@@ -193,11 +193,11 @@
                 <div class="modal-body modalMission">
                     <p>Choose Do you want to Increase or or decrease number of Points for </p>
                     <p class="fw-bold">Lesle Alexander</p>
-                    <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
-                    <label class="btn btn-outline-primary" for="option1">Increase</label>
+                    <input type="radio" class="btn-check" name="optionspoint" id="optionpoint1" autocomplete="off" checked>
+                    <label class="btn btn-outline-primary" for="optionpoint1">Increase</label>
 
-                    <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
-                    <label class="btn btn-outline-primary" for="option2">Decrease</label>
+                    <input type="radio" class="btn-check" name="optionspoint" id="optionpoint2" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="optionpoint2">Decrease</label>
                     <select class="form-select height-40 font-14 mt_3" aria-label="Default select example">
                         <option selected>Number of Points</option>
                         <option value="1">One</option>
@@ -217,22 +217,22 @@
         <div class="modal fade" id="bulkModifyMissions">
             <div class="modal-content">
                 <div class="modalHeader bgGray d-flex">
-                    <h4 class="modal-title" id="bulkModifyPointsLabel">Bulk Modify Points</h4>
+                    <h4 class="modal-title" id="bulkModifyPointsLabel">Bulk Modify Missions</h4>
                     <button type="button" class="close"><i class="fa fa-times"></i></button>
                 </div>
                 <div class="modal-body modalMission">
-                    <p>Choose Do you want to Increase or or decrease number of Points for </p>
+                    <p>Choose Do you want to Increase or or decrease number of Missions for </p>
                     <p class="fw-bold">Lesle Alexander</p>
 
                     <label for="formFile" class="form-label">Default file input example</label>
                     <input class="form-control mb_3 mt_3" type="file" id="formFile">
-                    <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
-                    <label class="btn btn-outline-primary" for="option1">Increase</label>
+                    <input type="radio" class="btn-check" name="optionsbulk" id="optionbulk1" autocomplete="off" checked>
+                    <label class="btn btn-outline-primary" for="optionbulk1">Increase</label>
 
-                    <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
-                    <label class="btn btn-outline-primary" for="option2">Decrease</label>
+                    <input type="radio" class="btn-check" name="optionsbulk" id="optionbulk2" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="optionbulk2">Decrease</label>
                     <select class="form-select height-40 font-14 mt_3" aria-label="Default select example">
-                        <option selected>Number of Points</option>
+                        <option selected>Number of Missions</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
                         <option value="3">Three</option>
@@ -259,11 +259,11 @@
 
                     <label for="formFile" class="form-label">Default file input example</label>
                     <input class="form-control mb_3 mt_3" type="file" id="formFile">
-                    <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
-                    <label class="btn btn-outline-primary" for="option1">Increase</label>
+                    <input type="radio" class="btn-check" name="optionsbmodify" id="optionbmodify1" autocomplete="off" checked>
+                    <label class="btn btn-outline-primary" for="optionbmodify1">Increase</label>
 
-                    <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
-                    <label class="btn btn-outline-primary" for="option2">Decrease</label>
+                    <input type="radio" class="btn-check" name="optionsbmodify" id="optionbmodify2" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="optionbmodify2">Decrease</label>
                     <select class="form-select height-40 font-14 mt_3" aria-label="Default select example">
                         <option selected>Number of Points</option>
                         <option value="1">One</option>
@@ -280,61 +280,58 @@
             </div>
         </div>
         <!-- Modal Emails -->
-        <div class="modal fade" id="modalEmail" tabindex="-1" aria-labelledby="modalEmailLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-scrollable">
-                <div class="modal-content">
-                    <div class="modal-header bgGray">
-                        <h5 class="modal-title" id="modalEmailLabel">(12) Users Email Selected</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body modalMission">
-                        <table id="example" class="table pb-3" style="width:100%">
-                            <thead>
-                                <tr>
-                                    <th>#</th>
-                                    <th>Name</th>
-                                    <th>Email</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>10039</td>
-                                    <td>Mohamed Essa</td>
-                                    <td>essa@pencil-designs.com</td>
-                                </tr>
-                                <tr>
-                                    <td>10039</td>
-                                    <td>Mohamed Essa</td>
-                                    <td>essa@pencil-designs.com</td>
-                                </tr>
-                                <tr>
-                                    <td>10039</td>
-                                    <td>Mohamed Essa</td>
-                                    <td>essa@pencil-designs.com</td>
-                                </tr>
-                                <tr>
-                                    <td>10039</td>
-                                    <td>Mohamed Essa</td>
-                                    <td>essa@pencil-designs.com</td>
-                                </tr>
-                                <tr>
-                                    <td>10039</td>
-                                    <td>Mohamed Essa</td>
-                                    <td>essa@pencil-designs.com</td>
-                                </tr>
-                                <tr>
-                                    <td>10039</td>
-                                    <td>Mohamed Essa</td>
-                                    <td>essa@pencil-designs.com</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btnCancel px-4" data-bs-dismiss="modal">Cancel</button>
-                        <button type="button" class="btn btnModify px-4">Modify Missions</button>
-                    </div>
+        <div class="modal fade" id="modalEmail">
+            <div class="modal-content">
+                <div class="modalHeader bgGray d-flex">
+                    <h4 class="modal-title" id="bulkModifyPointsLabel">(12) Users emails selected</h4>
+                    <button type="button" class="close"><i class="fa fa-times"></i></button>
+                </div>
+                <div class="modal-body modalMission">
+                    <table id="example" class="table pb-3" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>10039</td>
+                                <td>Mohamed Essa</td>
+                                <td>essa@pencil-designs.com</td>
+                            </tr>
+                            <tr>
+                                <td>10039</td>
+                                <td>Mohamed Essa</td>
+                                <td>essa@pencil-designs.com</td>
+                            </tr>
+                            <tr>
+                                <td>10039</td>
+                                <td>Mohamed Essa</td>
+                                <td>essa@pencil-designs.com</td>
+                            </tr>
+                            <tr>
+                                <td>10039</td>
+                                <td>Mohamed Essa</td>
+                                <td>essa@pencil-designs.com</td>
+                            </tr>
+                            <tr>
+                                <td>10039</td>
+                                <td>Mohamed Essa</td>
+                                <td>essa@pencil-designs.com</td>
+                            </tr>
+                            <tr>
+                                <td>10039</td>
+                                <td>Mohamed Essa</td>
+                                <td>essa@pencil-designs.com</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btnCancel px-4" >Cancel</button>
+                    <button type="button" class="btnModify px-4 ">Modify Missions</button>
                 </div>
             </div>
         </div>
@@ -349,15 +346,18 @@
         var modal = document.getElementById("modifyMission");
         var modalPoint = document.getElementById("modifyPoint");
         var modalBulkPoint = document.getElementById("bulkModifyPoints");
+        var modalBulkMission = document.getElementById("bulkModifyMissions");
 
         // Get the button that opens the modal
         var btn = document.getElementById("btnModalMission");
         var btnPoint = document.getElementById("btnModalPoints");
         var btnBulkPoint = document.getElementById("btnModalBulkPoints");
+        var btnBulkMission = document.getElementById("btnModalBulkMission");
 
         // Get the <span> element that closes the modal
         var span = document.getElementsByClassName("close")[0];
         var spanPoint = document.getElementsByClassName("close")[1];
+        var spanBulkMission = document.getElementsByClassName("close")[2];
         var spanBulkPoint = document.getElementsByClassName("close")[3];
 
         // When the user clicks the button, open the modal 
@@ -366,6 +366,9 @@
         }
         btnPoint.onclick = function() {
             modalPoint.style.display = "block";
+        }
+        btnBulkMission.onclick = function() {
+            modalBulkMission.style.display = "block";
         }
         btnBulkPoint.onclick = function() {
             modalBulkPoint.style.display = "block";
@@ -377,6 +380,9 @@
         }
         spanPoint.onclick = function() {
             modalPoint.style.display = "none";
+        }
+        spanBulkMission.onclick = function() {
+            modalBulkMission.style.display = "none";
         }
         spanBulkPoint.onclick = function() {
             modalBulkPoint.style.display = "none";
@@ -391,6 +397,11 @@
         window.onclick = function(event) {
         if (event.target == modalPoint) {
             modalPoint.style.display = "none";
+        }
+        }
+        window.onclick = function(event) {
+        if (event.target == modalBulkMission) {
+            modalBulkMission.style.display = "none";
         }
         }
         window.onclick = function(event) {
